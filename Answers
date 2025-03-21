@@ -1,1 +1,14 @@
+### 1. **What is the keyboard interaction missing?**  
+
+- **Arrow Key Navigation**: Users should be able to navigate between accordion buttons using the **Up** and **Down Arrow** keys.  
+- **Enter and Space Activation**: Pressing **Enter** or **Space** should expand or collapse the accordion panel.  
+- **Tab Navigation**: Each button should be tabbable for users to access via keyboard.
+
+
+### 2. **What is the ARIA missing?**  
+
+- **`aria-expanded`**: This was missing or not dynamically updated, so screen readers couldn’t announce whether a section was open or closed.  
+- **`aria-controls`**: This was needed to associate each button with its corresponding content panel.  
+- **`aria-labelledby`**: Required on the accordion panel to indicate which button controls it.  
+- **`role="region"`**: This was added to indicate that the accordion panel is a live region of content.  
 
